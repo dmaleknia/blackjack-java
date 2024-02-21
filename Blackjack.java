@@ -23,8 +23,8 @@ public class Blackjack {
         System.out.println("First cards: " + card1 + ", " + card2);
         System.out.println("Total: " + total);
 
-        // Loops until the player's total is greater than 21 and the dealer's total is greater than 21.
-        while(total < 21 && dealerTotal < 21) {
+        // Loops until the player's total is greater than or equal to 21 or the dealer's total is greater than or equal to 21.
+        while(total < 21 || dealerTotal < 21) {
             
             // Asks the player if they want another card.
             System.out.println("Do you want another card? (y/n): ");
